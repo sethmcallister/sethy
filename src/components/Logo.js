@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react'
+import ProfileImg from '../img/profile.jpg'
 
 class Logo extends Component {
   render () {
@@ -8,7 +9,7 @@ class Logo extends Component {
         <div className='dt mw6 center pv4 pv5-m pv6-ns'>
           <div className='dtc v-mid'>
             <img
-              src={details.logo_img}
+              src={ProfileImg}
               className='br-100 pa1 ba b--black-10 h4 w4'
               alt={details.logo_text} />
           </div>

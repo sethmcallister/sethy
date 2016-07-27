@@ -17,7 +17,9 @@ module.exports = {
   module: {
     loaders: [
       {test: /\.js$/, loaders: ['babel-loader'], include: path.join(__dirname, '../src')},
-      {test: /\.css$/, loader: 'style-loader!css-loader!postcss-loader'}
+      {test: /\.css$/, loader: 'style-loader!css-loader!postcss-loader'},
+      {test: /\.(jpe?g|png|gif|svg)$/i, loader: 'url?limit=10000!img?progressive=true'}
+
     ]
   },
   postcss: function () {

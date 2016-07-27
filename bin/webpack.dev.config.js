@@ -7,9 +7,10 @@ var NpmInstallPlugin = require('npm-install-webpack-plugin')
 
 module.exports = {
   devServer: {
-    // stats: 'minimal',
+    stats: 'minimal',
     hot: true,
-    historyApiFallback: true
+    historyApiFallback: true,
+    static: '/static'
   },
   devtool: 'eval',
   entry: {
@@ -24,8 +25,9 @@ module.exports = {
   },
   module: {
     loaders: [
-      {test: /\.js$/, loaders: ['babel-loader'], include: path.join(__dirname, '../src')},
-      {test: /\.css$/, loader: 'style-loader!css-loader!postcss-loader'}
+      {test: /\.js$/, loaders: 'babel-loader', include: path.join(__dirname, '../src')},
+      {test: /\.css$/, loader: 'style-loader!css-loader!postcss-loader'},
+      {test: /\.(jpe?g|png|gif|svg)$/i, loader: 'url?limit=10000!img?progressive=true'}
     ]
   },
   postcss: function () {
