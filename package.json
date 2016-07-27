@@ -9,12 +9,13 @@
     "clean": "npm run purge && npm install",
     "build": "rm -rf dist && webpack --config bin/webpack.config.js --progress -p",
     "build:start": "npm run build && node bin/serve-dist-folder.js",
-    "deploy": "surge --project dist/ --domain seth.mcallister.xyz",
+    "predeploy": "npm run build",
+    "deploy": "surge --project ./dist --domain seth.mcallister.xyz",
     "start": "webpack-dev-server --hot --config bin/webpack.dev.config.js"
   },
   "git": {
     "scripts": {
-      "pre-push": "surge --project ./dist --domain seth.mcallister.xyz"
+      "pre-push": "npm run deploy"
     }
   },
   "repository": {
