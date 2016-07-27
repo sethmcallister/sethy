@@ -10,7 +10,7 @@ class Header extends Component {
         <nav className='f6 fw6 ttu tracked'>
           <Link className='link dim white dib mr3' to='/'> Home
           </Link>
-          <Link className='link dim white dib mr3' to='/Projects'> Projects
+          <Link className='link dim white dib mr3' to='/projects'> Projects
           </Link>
           <Link className='link dim white dib mr3' to='/contact'> Contact
           </Link>

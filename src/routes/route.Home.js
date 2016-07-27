@@ -4,7 +4,7 @@ class routeHome extends Component {
   render () {
     return (
       <div>
-        Home
+        Welcome to sethys world!!
       </div>
     )
   }

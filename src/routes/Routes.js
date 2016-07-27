@@ -8,7 +8,7 @@ import routeContact from './route.Contact'
 module.exports = (
   <Route path='/' component={routeApp}>
     <IndexRoute component={routeHome} />
-    <Route path='/Projects' component={routeProjects} />
+    <Route path='/projects' component={routeProjects} />
     <Route path='/contact' component={routeContact} />
   </Route>
 )
