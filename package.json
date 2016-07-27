@@ -12,6 +12,11 @@
     "deploy": "surge --project dist/ --domain seth.mcallister.xyz",
     "start": "webpack-dev-server --hot --config bin/webpack.dev.config.js"
   },
+  "git": {
+    "scripts": {
+      "pre-push": "surge --project ./dist --domain seth.mcallister.xyz"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/sethmcallister/boilerplate.git"
