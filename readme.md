@@ -1,11 +1,7 @@
 -------------------
+## Get Started
 
-# Readme file
-#### 
-es6, webpack, hot reloading
-
-
-## Installation
+Install all the dependencies
 
 * `npm install`
 
@@ -13,16 +9,21 @@ To start the dev server:
 
 * `npm start`
 
-To build the site: 
+To build the site locally: 
 
 * `npm run build`
 
-then all the files to need to upload are in the `dist` foler
+To test run the built the site locally: 
+
+* `npm run build:start`
+
+To deploy the site to surge and then do a git push:
+
+* `npm run deploy`
 
 
-## Todo
+You can add other files, like images to the static folder, these will be copied over to dist when you build
+
+
+## Things to add
 * testing
-* server side rendering on build
-* let express/JS build the html file, instead of webpack
-
--------------------
