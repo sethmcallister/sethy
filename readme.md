@@ -13,6 +13,12 @@ To start the dev server:
 
 * `npm start`
 
+To build the site: 
+
+* `npm run build`
+
+then allt he files to need to upload are in the `dist` foler
+
 
 ## Todo
 * testing
