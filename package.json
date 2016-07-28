@@ -12,7 +12,9 @@
     "predeploy": "npm run build",
     "deploy": "surge --project ./dist --domain seth.mcallister.xyz",
     "postdeploy": "git push",
-    "start": "webpack-dev-server --hot --config bin/webpack.dev.config.js"
+    "start": "webpack-dev-server --hot --config bin/webpack.dev.config.js",
+    "ds": "docker run -it -p 3000:3000 alpine-node bash",
+    "docker-build": "docker build -t alpine-node ."
   },
   "repository": {
     "type": "git",
